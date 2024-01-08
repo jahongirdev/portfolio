@@ -15,6 +15,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -39,6 +40,20 @@ body {
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+*:focus {
+  outline: 1px dotted var(--clr-primary);
+  outline-offset: 2px;
+}
+::-webkit-scrollbar {
+  width: 0.3em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-primary);
+  outline: 1px solid slategrey;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+}
 ::-moz-selection {
   background: var(--clr-primary);
   color: var(--clr-bg);
@@ -59,7 +74,7 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 h3 {
   font-size: 1.5rem;
