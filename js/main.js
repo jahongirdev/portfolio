@@ -1,8 +1,10 @@
-const body = document.body
 
+// call elements from html
+const body = document.body
 const btnTheme = document.querySelector('.fa-moon')
 const btnHamburger = document.querySelector('.fa-bars')
 
+// theme change toggle
 const addThemeClass = (bodyClass, btnClass) => {
 	body.classList.add(bodyClass)
 	btnTheme.classList.add(btnClass)
@@ -16,7 +18,6 @@ addThemeClass(getBodyTheme, getBtnTheme)
 const isDark = () => body.classList.contains('dark')
 
 const setTheme = (bodyClass, btnClass) => {
-
 	body.classList.remove(localStorage.getItem('portfolio-theme'))
 	btnTheme.classList.remove(localStorage.getItem('portfolio-btn-theme'))
 
@@ -31,6 +32,8 @@ const toggleTheme = () =>
 
 btnTheme.addEventListener('click', toggleTheme)
 
+
+// responsive menu toggle
 const displayList = () => {
 	const navUl = document.querySelector('.nav-list')
 
@@ -44,9 +47,10 @@ const displayList = () => {
 		navUl.classList.remove('display-nav-list')
 	}
 }
-
 btnHamburger.addEventListener('click', displayList)
 
+
+// scroll up
 const scrollUp = () => {
 	const btnScrollTop = document.querySelector('.scroll-top')
 
@@ -59,5 +63,4 @@ const scrollUp = () => {
 		btnScrollTop.style.display = 'none'
 	}
 }
-
 document.addEventListener('scroll', scrollUp)
