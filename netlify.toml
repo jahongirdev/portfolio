@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://jahongirdev.netlify.app/*"
+  to = "https://jahongirvm.uz/:splat"
+  status = 301
+  force = true
