@@ -41,6 +41,16 @@
   background: #008d42;
 }
 
+::-moz-selection { 
+  color: #000;
+  background: #008d42;
+}
+
+::selection {
+  color: #000;
+  background: #008d42;
+}
+
 .light-background {
   --background-color: #1a1a1a;
   --surface-color: #343434;
