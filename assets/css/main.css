@@ -25,7 +25,21 @@
   --nav-dropdown-hover-color: #18d26e;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
 
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #18d26e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #008d42;
+}
 
 .light-background {
   --background-color: #1a1a1a;
